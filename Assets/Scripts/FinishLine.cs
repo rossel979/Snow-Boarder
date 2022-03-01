@@ -13,6 +13,7 @@ public class FinishLine : MonoBehaviour
         {
             finishEffect.Play(); 
             Invoke("ReloadScene", fltloadDelay);
+            GetComponent<AudioSource>().Play();
         }
         
     }
